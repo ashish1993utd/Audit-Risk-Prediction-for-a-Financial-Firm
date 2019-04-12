@@ -1,7 +1,6 @@
 # Audit-Risk-Prediction-for-a-Firm
 
 > Building a Predictive model that predicts the Audit risk for a financial firm which inturn tells us what are the chances of a firm being fraudulent.
-Audit risk analysis using multiple firms' historical data using Regression algorithms like KNN, LinearSVM, Kernelized SVM, Ridge, Lasso, Polynomial Regression, Linear Regression, Decision Tree, and Random Forest
 
 ## Table of contents
 * [General info](#general-info)
@@ -11,9 +10,7 @@ Audit risk analysis using multiple firms' historical data using Regression algor
 
 ## General info
 We have a dataset of 700+ Financial firms and we are trying to find out the best predictive model to predict the Audit Risk for a firm.
-In this process, we have preprocessed and cleaned the data, and then applied various regression models like NN, LinearSVM, \
-Kernelized SVM, Ridge, Lasso, Stochastic Gradient Regressor, Polynomial Regression, Linear Regression, Decision Tree, and Random Forest
-to fit the data.
+In this process, we have preprocessed and cleaned the data, and then applied various regression models like KNN, LinearSVM, Kernelized SVM, Ridge, Lasso, Stochastic Gradient Regressor, Polynomial Regression, Linear Regression, Decision Tree, and Random Forest to fit the data.
 
 We have found best parameters for each model using Grid Search Cross Validation and at the end compared all the models to find the best one out of all.
 
@@ -52,6 +49,8 @@ plt.xscale('log')
 plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.7),
           ncol=5, fancybox=True, shadow=True)
 plt.show()
+````
+````
 
 # Using Grid Search to find the best parameters for kernelized SVM
 
@@ -70,7 +69,8 @@ best_parameters = grid_search.best_params_
 
 print('Best Accuracy is {}'.format(best_accuracy))
 print('Best Parameters {}'.format(best_parameters))
-
+````
+````
 # Plotting Feature Importances as given by Decision Tree
 
 tree=DecisionTreeRegressor(min_samples_split=2)
