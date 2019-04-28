@@ -14,6 +14,8 @@ In this process, we have preprocessed and cleaned the data, and then applied var
 
 We have found best parameters for each model using Grid Search Cross Validation and at the end compared all the models to find the best one out of all.
 
+In second phase of this project we have used Ensemble models and Principal Component Analysis
+
 ## Technologies and Tools
 * Python 
 * mglearn
